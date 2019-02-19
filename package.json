@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^10.12.24",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "@types/styled-components": "^4.1.8",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react-dom": "^16.8.1",
+    "react-spring": "^8.0.7",
+    "source-map-explorer": "^1.6.0",
+    "styled-components": "^4.1.3",
+    "typescript": "^3.3.3"
   },
   "devDependencies": {
-    "react-scripts": "2.1.3"
+    "react-scripts": "2.1.3",
+    "watch": "^1.0.2"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "dev-watch": "watch 'yarn run build && yarn run dev-update-extensions' ./src ./public",
+    "dev-update-extensions": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --silent-launch http://reload.extensions",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
