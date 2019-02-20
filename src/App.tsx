@@ -57,8 +57,9 @@ const Color = styled(animated.div)`
   border-radius: 10px;
   font-weight: bold;
   font-size: 20px;
-  height: 100%;
+  height: calc(100px + 25vw);
   justify-content: center;
+  max-height: 400px;
   transition: box-shadow 0.5s;
   width: 100%;
   will-change: transform;
