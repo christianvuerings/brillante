@@ -31,7 +31,7 @@ const Colors = styled.div`
   display: grid;
   grid-auto-flow: column;
   grid-gap: 15px;
-  grid-template-columns: repeat(5, minmax(200px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   grid-template-rows: 400px;
   height: 100%;
   justify-content: center;
