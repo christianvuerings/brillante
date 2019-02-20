@@ -4,6 +4,12 @@ import { animated, useSpring } from "react-spring";
 import { useFetch } from "./hooks";
 
 const GlobalStyle = createGlobalStyle`
+	html {
+		box-sizing: border-box;
+	}
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
 	body {
 		margin: 0;
 		padding: 0;
@@ -22,7 +28,9 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.div`
   background: #f2f6f2;
+  display: flex;
   height: 100vh;
+  justify-content: center;
   width: 100vw;
 `;
 
@@ -30,11 +38,13 @@ const Colors = styled.div`
   align-content: center;
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-gap: calc(5px + 0.5vw);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 400px;
   height: 100%;
   justify-content: center;
+  max-width: calc(1250px + 10 * 5px);
+  width: 100%;
 `;
 
 const Color = styled(animated.div)`
