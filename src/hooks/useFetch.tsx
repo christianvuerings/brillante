@@ -13,7 +13,7 @@ const useFetch = (url: string) => {
     setError(null);
 
     try {
-      const result = await fetch(url);
+      const result = await fetch(`https://cors-anywhere.herokuapp.com/${url}`);
       const body = await result.json();
 
       if (update) {

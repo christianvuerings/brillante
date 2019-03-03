@@ -6,5 +6,9 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": ["https://www.colourlovers.com/"]
+  "background": {
+    "scripts": ["hot-reload.js"],
+    "persistent": false
+  },
+  "permissions": ["https://www.colourlovers.com/", "tabs", "management"]
 }

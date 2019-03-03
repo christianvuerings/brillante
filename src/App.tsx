@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
+import { copy } from "./util";
 import { animated, useSpring } from "react-spring";
 import { useFetch } from "./hooks";
-
 const GlobalStyle = createGlobalStyle`
 	html {
 		box-sizing: border-box;
@@ -45,6 +45,32 @@ const Colors = styled.div`
   justify-content: center;
   max-width: calc(1250px + 10 * 5px);
   width: 100%;
+`;
+
+const ColorButton = styled.button`
+  background: transparent;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  height: 100%;
+  padding: 0;
+  transition: border 75ms ease-out;
+  width: 100%;
+
+  :hover {
+    cursor: pointer;
+  }
+  :focus {
+    border: 3px solid
+      ${(props: { brightness: number }) =>
+        props.brightness >= 180
+          ? "rgba(0, 0, 0, 0.3)"
+          : "rgba(255, 255, 255, 0.3)"};
+    border-radius: 5px;
+    outline: none;
+  }
 `;
 
 const Color = styled(animated.div)`
@@ -111,7 +137,9 @@ const ColorCard = ({ color }: { color: string }) => {
         transform: props.xys.interpolate(trans)
       }}
     >
-      {hexColor}
+      <ColorButton onClick={() => copy(hexColor)} brightness={brightness}>
+        {hexColor}
+      </ColorButton>
     </Color>
   );
 };

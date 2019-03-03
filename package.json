@@ -23,8 +23,7 @@
     "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dev-watch": "watch 'yarn run build && yarn run dev-update-extensions' ./src ./public",
-    "dev-update-extensions": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --silent-launch http://reload.extensions",
+    "dev": "watch 'yarn run build' ./src ./public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
