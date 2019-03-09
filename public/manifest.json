@@ -3,6 +3,11 @@
   "description": "Be inspired, every new tab",
   "version": "0.0.1",
   "manifest_version": 2,
+  "icons": {
+    "32": "favicons/brillante-32.png",
+    "64": "favicons/brillante-64.png",
+    "128": "favicons/brillante-128.png"
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

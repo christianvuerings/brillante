@@ -80,7 +80,7 @@ const Color = styled(animated.div)`
   border: 5px solid #fff;
   box-shadow: 0px 1px 10px -5px rgba(0, 0, 0, 0.3);
   display: flex;
-  border-radius: 10px;
+  border-radius: 20px;
   font-weight: bold;
   font-size: 20px;
   height: calc(100px + 25vw);
