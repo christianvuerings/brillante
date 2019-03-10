@@ -11,6 +11,9 @@
 # production
 /build
 
+# Don't include the zip file
+chrome.zip
+
 # misc
 .DS_Store
 .env.local
