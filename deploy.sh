@@ -1,5 +1,7 @@
 echo $PATH
-which react-scripts
+$PATH=/travis/home/node_modules/.bin:$PATH
+echo $PATH
+ls /travis/home/node_modules/.bin
 npm run clean
 npm run build
 npm run chrome:package
