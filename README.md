@@ -1,6 +1,9 @@
 # Brillante
 
-A chrome extension to inpire you every time you open a new tab.
+A chrome extension to inpire you every time you open a new tab.  
+[Download on the Chrome web store](https://chrome.google.com/webstore/detail/gpcinodmpidjacfpkobmjonfmhemhoen)
+
+<img src="./design/screenshot-1280.jpg" width="640">
 
 ## Scripts
 
