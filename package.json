@@ -1,6 +1,6 @@
 {
   "name": "brillante",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "dependencies": {
     "@types/jest": "^24.0.0",
     "@types/node": "^10.12.24",
