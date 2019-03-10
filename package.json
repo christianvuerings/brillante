@@ -15,10 +15,10 @@
     "source-map-explorer": "^1.6.0",
     "styled-components": "^4.1.3",
     "typescript": "^3.3.3",
-    "version-everything": "^0.2.3",
     "watch": "^1.0.2"
   },
   "devDependencies": {
+    "dot-json": "^1.1.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -28,14 +28,11 @@
     "clean": "rm -rf build && mkdir build",
     "dev": "watch 'npm run build' ./src ./public",
     "eject": "react-scripts eject",
-    "version": "version-everything && git add -u",
     "bump": "release-it patch -n",
     "chrome:package": "zip -jr chrome.zip build",
-    "chrome:release": "npm run clean && npm run build && npm run chrome:package && webstore upload --file chrome.zip --auto-publish"
+    "chrome:update-manifest-version": "public/manifest.json",
+    "chrome:release": "npm run clean && npm run build && npm run chrome:update-manifest-version && npm run chrome:package && webstore upload --source chrome.zip --auto-publish"
   },
-  "version_files": [
-    "public/manifest.json"
-  ],
   "release-it": {
     "git": {
       "requireUpstream": false
@@ -44,7 +41,6 @@
       "release": true
     },
     "scripts": {
-      "afterBump": "npm run version",
       "afterRelease": "echo Successfully released ${name} v${version} to ${repo.repository}."
     }
   },

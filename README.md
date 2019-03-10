@@ -1,9 +1,13 @@
 # Brillante
 
 A chrome extension to inpire you every time you open a new tab.  
-[Download on the Chrome web store](https://chrome.google.com/webstore/detail/gpcinodmpidjacfpkobmjonfmhemhoen)
+[link-cws]: https://chrome.google.com/webstore/detail/gpcinodmpidjacfpkobmjonfmhemhoen
 
 <img src="https://raw.githubusercontent.com/christianvuerings/brillante/master/design/screenshot-1280.jpg" width="640">
+
+## Install
+
+- [**Chrome** extension][link-cws] [<img valign="middle" src="https://img.shields.io/chrome-web-store/v/gpcinodmpidjacfpkobmjonfmhemhoen.svg?label=%20">][link-cws]
 
 ## Scripts
 
