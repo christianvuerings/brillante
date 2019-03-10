@@ -6,7 +6,7 @@ before_script:
 script: echo "npm test temporarily disabled"
 deploy:
   provider: script
-  script: echo $PATH && which react-scripts && npm run clean && npm run build && npm run chrome:package && webstore upload --file chrome.zip --auto-publish
+  script: ./deploy.sh
   on:
     branch: master
     tags: true
