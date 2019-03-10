@@ -1,6 +1,7 @@
 echo $PATH
-$PATH=./node_modules/.bin:$PATH
+PATH=./node_modules/.bin:$PATH
 echo $PATH
+pwd
 ls ./node_modules/.bin
 npm run clean
 npm run build
