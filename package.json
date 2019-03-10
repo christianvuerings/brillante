@@ -39,6 +39,9 @@
     "public/manifest.json"
   ],
   "release-it": {
+    "git": {
+      "requireUpstream": false
+    },
     "github": {
       "release": true
     }
