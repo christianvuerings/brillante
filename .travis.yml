@@ -3,10 +3,9 @@ node_js:
   - "lts/*"
 before_script:
   - echo $PATH
-  - npm install -g react-scripts
 deploy:
   provider: script
-  script: npm run chrome:release
+  script: npm run clean && npm run build && npm run chrome:package && webstore upload --file chrome.zip --auto-publish
   on:
     branch: master
     tags: true
