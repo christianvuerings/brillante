@@ -28,7 +28,7 @@
     "dev": "watch 'npm run build' ./src ./public",
     "eject": "react-scripts eject",
     "version": "version-everything && git add -u & git commit -am \"Update manifest.json to ${version}\"",
-    "bump": "release-it minor",
+    "bump": "release-it minor -n",
     "chrome:package": "zip -jr chrome.zip build",
     "chrome:release": "npm-run-all clean build chrome:package webstore upload --file chrome.zip --auto-publish"
   },
