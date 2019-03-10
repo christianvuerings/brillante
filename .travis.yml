@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "lts/*"
+cache: npm
 deploy:
   provider: script
   script: npm run chrome:release
