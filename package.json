@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "bump": "release-it patch -n",
     "chrome:package": "zip -jr chrome.zip build",
-    "chrome:update-manifest-version": "public/manifest.json",
+    "chrome:update-manifest-version": "VERSION=$(dot-json package.json version) && dot-json build/manifest.json version $VERSION",
     "chrome:release": "npm run clean && npm run build && npm run chrome:update-manifest-version && npm run chrome:package && webstore upload --source chrome.zip --auto-publish"
   },
   "release-it": {

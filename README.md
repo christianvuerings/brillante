@@ -1,4 +1,4 @@
-# Brillante
+# Brillante [![Build Status](https://travis-ci.com/christianvuerings/brillante.svg?branch=master)](https://travis-ci.com/christianvuerings/brillante)
 
 A chrome extension to inpire you every time you open a new tab.  
 [link-cws]: https://chrome.google.com/webstore/detail/gpcinodmpidjacfpkobmjonfmhemhoen
