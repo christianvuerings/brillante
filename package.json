@@ -26,7 +26,7 @@
     "clean": "rm -rf build && mkdir build",
     "dev": "watch 'npm run build' ./src ./public",
     "eject": "react-scripts eject",
-    "version": "version-everything && git add -u & git commit -am \"Update manifest.json to ${version}\"",
+    "version": "version-everything && git add -u & git commit --amend --no-edit",
     "bump": "release-it minor -n",
     "chrome:package": "zip -jr chrome.zip build",
     "chrome:release": "npm run clean && npm run build && npm run chrome:package && webstore upload --file chrome.zip --auto-publish"
