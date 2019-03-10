@@ -1,8 +1,4 @@
-echo $PATH
-PATH=./node_modules/.bin:$PATH
-echo $PATH
-pwd
-ls -la
+npm install
 npm run clean
 npm run build
 npm run chrome:package
