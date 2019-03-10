@@ -5,6 +5,7 @@ before_script:
   - echo $PATH
 script: echo "npm test temporarily disabled"
 deploy:
+  skip_cleanup: true
   provider: script
   script: ./deploy.sh
   on:
